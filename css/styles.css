@@ -1,0 +1,23 @@
+
+/* Variables CSS */
+/* Colores */
+:root {
+    --color-one:#000000;
+    --color-two:#ffffff;
+    --color-three:#aae817;
+    --color-four:#bbbbbb;  
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Selectores generales */
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+

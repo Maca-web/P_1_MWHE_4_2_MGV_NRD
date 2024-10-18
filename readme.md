@@ -1,0 +1,1 @@
+<!-- Hay que especificar en las variables del proyecto el peso de la tipografía, que van a ser 400 para regular, y 700 para bold.  -->
