@@ -13,6 +13,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
+    color: #000000;
 }
 
 /* Selectores generales */
@@ -20,3 +21,22 @@ img {
     width: 100%;
     vertical-align: middle;
 }
+
+/* Otros selectores */
+.navbar {
+    border: #000000 2px solid;
+    margin:1rem;
+    background-color: #ffffff !important;
+}
+.navbar-expand {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+}
+
+/* .navbar-toggler {
+    margin-right: 1rem;
+} */
