@@ -22,8 +22,13 @@ img {
     vertical-align: middle;
 }
 
+h1 {
+    font-weight: 700;
+}
+
+
 /* Otros selectores */
-.navbar {
+.navbar, #brands {
     border: #000000 2px solid;
     margin:1rem;
     background-color: #ffffff !important;
@@ -33,10 +38,13 @@ img {
     justify-content: space-between;
 }
 
-.navbar-brand {
-    margin-left: 1rem;
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size:1.5rem;
+    font-weight: 700;
+    color: #000000;
 }
 
-/* .navbar-toggler {
-    margin-right: 1rem;
-} */
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #aae817;
+}
+
