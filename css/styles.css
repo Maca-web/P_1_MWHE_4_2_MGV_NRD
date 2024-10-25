@@ -13,7 +13,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
-    color: #000000;
+    color: var(--color-one);
 }
 
 /* Selectores generales */
@@ -22,36 +22,53 @@ img {
     vertical-align: middle;
 }
 
-h1 {
+h1, h4 {
     font-weight: 700;
-    padding: 1rem;
 }
 
 
 /* Otros selectores */
-.navbar, #brands {
+.navbar, .header_web, #brands,#presentation, #location, #about-us {
     border: #000000 2px solid;
     margin:1rem;
-    background-color: #ffffff !important;
+    padding: 1rem;
+    background-color: var(--color-two)!important;
 }
+
+.navbar {
+    padding:0;
+}
+
 .navbar-expand {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    font-size:1.5rem;
+    font-size:1.3rem;
     font-weight: 700;
-    color: #000000;
+    padding-left: 1.3em;
+    color: var(--color-one);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #aae817;
+    color: var(--color-three);
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+}
+
+.navbar-toggler, .navbar-collapse-show {
+    border:none;
 }
 
 
+/* PRESENTATION */
+
 
 /* BRANDS  */
+
 
 
 
