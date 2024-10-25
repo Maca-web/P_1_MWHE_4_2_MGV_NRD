@@ -68,6 +68,26 @@ h1, h4 {
 
 
 /* BRANDS  */
+.brand-description {
+    padding: 1rem; /* Espacio entre el h2 y el p */
+
+    color: black; 
+    display: none;
+    text-align: justify;
+    background-color: var(--color-three);
+    height: 100%;
+    width:100%
+}
+
+.brand-title{
+    padding-left: 1rem;
+}
+
+#brands{
+    padding: 0;
+
+}
+
 
 
 
