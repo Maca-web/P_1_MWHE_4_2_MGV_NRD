@@ -14,6 +14,7 @@
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
     color: var(--color-one);
+
 }
 
 /* Selectores generales */
@@ -142,13 +143,21 @@ h1, h4 {
     color: black; 
     display: none;
     text-align: justify;
-    background-color: var(--color-three);
+    /* background-color: var(--color-three); */
     height: 100%;
-    width:100%
+    width:100%;
+    opacity: 1; /* Comienza completamente opaca */
+
 }
 
 .brand-title{
-    padding-left: 1rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #brands{
@@ -157,8 +166,62 @@ h1, h4 {
 }
 
 
+.brand{
+    background-color: #ffffff; /* Color de fondo inicial */
+    transition: background-color 0.5s ease; /* Efecto de transición suave de 0.5 segundos */
+}
+
+/* Efecto hover */
+.brand:hover{
+    background-color: #aae817;
+
+}
+
+
+
+.brand-col-r, .brand-col-l {
+    border-top: #000000 2px solid;
+}
+.brand-col-r{
+    border-right: #000000 1px solid;
+}
+.brand-col-l{
+    border-left: #000000 1px solid;
+}
+
+
 
 
 
 /* CARDS */
+.card{
 
+    border: solid;
+    border-radius: 0;
+    background-color: #ffffff; /* Color de fondo inicial */
+    transition: background-color 0.5s ease; /* Efecto de transición suave de 0.5 segundos */
+}
+
+.card>h2 {
+    margin: .5rem;
+}
+
+.card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: #000000 2px solid;
+
+
+}
+
+.card:hover{
+    background-color: #aae817;
+
+}
+
+.card p {
+    display: none; /* Oculto inicialmente */
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Efecto de desvanecimiento suave */
+    margin-top: 15px;
+}
