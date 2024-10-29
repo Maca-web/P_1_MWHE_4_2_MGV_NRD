@@ -36,7 +36,7 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="media/img/logotipo.png" alt="" width="20" height="20">
@@ -61,13 +61,15 @@
     <main>
 
       <section class="header_web">
-        <div id="header_title">
-          <h1>THE STREETWEAR EVENT</h1>
+        <div id="header_title" class="d-flex flex-column align-items-start">
+          <h1>THE </h1>
+          <h1>STREETWEAR</h1>
+          <h1>EVENT</h1>
           <h2>MADRID</h2>
           <h2>NOV. 22 - 24</h2>
-          <div>
-            <button type="button" class="btn btn-primary">DISCOVER</button>
-            <button type="button" class="btn btn-secondary">TICKETS</button>
+          <div class="d-flex flex-row gap-2 mt-1">
+            <button type="button" class="btn btn-primary"><a href="#presentation">DISCOVER</a></button>
+            <button type="button" class="btn btn-secondary"><a href="#presentation">TICKETS</a></button>
           </div>
         </div>
         <video autoplay muted loop id="video_background" src="media/video/video_header.mp4"></video>
@@ -76,14 +78,14 @@
       <section id="presentation">
         <h1 class="display-1">WELCOME</h1>
 
-        <div>
-          <div class="presentation_text">
+        <div class="d-flex flex-row">
+          <div class="presentation_text col-6">
             <h4>THE HOTTEST BRANDS ARE HERE.</h4>
             <p> Step into the scene and level up your style now!
               Get ready to experience the freshest streetwear brands at this exclusive pop-up event. It’s your chance to connect with the culture, explore the latest drops, and elevate your look with bold, must-have pieces. From limited-edition gear to iconic styles, everything you need to level up your street game is right here. Don’t miss out on the ultimate street style experience—this is where the scene happens!</p>
           </div>
-          <div class="presentation_video">
-            
+          <div class="presentation_video col-6">
+            <video autoplay muted loop id="video_background" src="media/video/video_presentation.mp4"></video>
           </div>
         </div>
 
