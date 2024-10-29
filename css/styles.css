@@ -127,16 +127,13 @@ a {
 
 
 /* PRESENTATION */
-#presentation {
-    padding: 3rem;
-}
 
 #presentation > h1 {
     color: var(--color-three);
 }
 
 .display-1 {
-    font-size:calc(1.625rem + 11.5vw);
+    font-size:calc(1.625rem + 15vw);
     font-weight: 700;
     padding-top: 2rem;
     padding-bottom: 2rem;
