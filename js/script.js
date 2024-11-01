@@ -5,24 +5,11 @@ $(function () {
           hour = minute * 60,
           day = hour * 24;
   
-    // Actualización automática de la fecha del próximo año si es necesario
-    let today = new Date(),
-        dd = String(today.getDate()).padStart(2, "0"),
-        mm = String(today.getMonth() + 1).padStart(2, "0"),
-        yyyy = today.getFullYear(),
-        nextYear = yyyy + 1,
-        dayMonth = "10/22/",
-        birthday = dayMonth + yyyy;
-  
-    today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) {
-      birthday = dayMonth + nextYear;
-    }
-    // Fin de actualización
-  
+    // Fecha fija para el countdown: 22 de noviembre de 2024
+    const birthday = "12/20/2024";
     const countDown = new Date(birthday).getTime();
-    const x = setInterval(function() {    
   
+    const x = setInterval(function() {    
       const now = new Date().getTime(),
             distance = countDown - now;
   
@@ -33,14 +20,12 @@ $(function () {
   
       // Cuando se alcance la fecha
       if (distance < 0) {
-        $("#headline").text("¡Es mi cumpleaños!");
+        $("#headline").text("STREETBEAT IS HERE!");
         $("#countdown").hide();
-        $("#content").show();
         clearInterval(x);
       }
-      // Tiempo de actualización en milisegundos
     }, 0);
-  });
+});
   
 
 // FLIPPING CARDS 
