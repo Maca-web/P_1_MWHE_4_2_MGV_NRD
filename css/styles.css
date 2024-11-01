@@ -81,7 +81,6 @@ a {
 .navbar-expand-lg .navbar-nav .nav-link {
     font-size:1.3rem;
     font-weight: 700;
-    padding-left: 1.3em;
     color: var(--color-one);
 }
 
@@ -125,6 +124,31 @@ a {
     z-index: 1;         /* Hace que el video esté por detrás del contenido */
 }
 
+/* COUNTDOWN */
+.container {
+    color:var(--color-one);
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
 
 /* PRESENTATION */
 
@@ -143,8 +167,10 @@ a {
     width: 100%;
     height:auto;
     vertical-align:middle;
+    object-fit: cover; 
 
 }
+
 .presentation_text {
     padding-right: 2rem;
 }
@@ -153,8 +179,7 @@ a {
 /* BRANDS  */
 .brand-description {
     padding: 1rem; /* Espacio entre el h2 y el p */
-
-    color: black; 
+    color: var(--color-one); 
     display: none;
     text-align: justify;
     /* background-color: var(--color-three); */
@@ -181,26 +206,26 @@ a {
 
 
 .brand{
-    background-color: #ffffff; /* Color de fondo inicial */
+    background-color: var(--color-two); /* Color de fondo inicial */
     transition: background-color 0.5s ease; /* Efecto de transición suave de 0.5 segundos */
 }
 
 /* Efecto hover */
 .brand:hover{
-    background-color: #aae817;
+    background-color: var(--color-three);
 
 }
 
 
 
 .brand-col-r, .brand-col-l {
-    border-top: #000000 2px solid;
+    border-top: var(--color-one) 2px solid;
 }
 .brand-col-r{
-    border-right: #000000 1px solid;
+    border-right: var(--color-one) 1px solid;
 }
 .brand-col-l{
-    border-left: #000000 1px solid;
+    border-left: var(--color-one) 1px solid;
 }
 
 
@@ -212,7 +237,7 @@ a {
 
     border: solid;
     border-radius: 0;
-    background-color: #ffffff; /* Color de fondo inicial */
+    background-color: var(--color-two); /* Color de fondo inicial */
     transition: background-color 0.5s ease; /* Efecto de transición suave de 0.5 segundos */
 }
 
@@ -223,7 +248,7 @@ a {
 .card-img-top {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border-top: #000000 2px solid;
+    border-top: var(--color-one) 2px solid;
 
 
 }
