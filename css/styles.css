@@ -32,6 +32,14 @@ a {
     color: var(--color-one);
 }
 
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    margin-bottom:0;
+}
+
 .btn {
     color:var(--color-one);
     border:none;
@@ -66,7 +74,7 @@ a {
 
 
 /* Otros selectores */
-.navbar, .header_web, #brands,#presentation, #location, #about-us {
+.navbar, .header_web, .container_countdown, #brands,#presentation, #location, #about-us {
     border: #000000 2px solid;
     margin:1rem;
     padding: 1rem;
@@ -125,30 +133,35 @@ a {
 }
 
 /* COUNTDOWN */
-.container {
-    color:var(--color-one);
-    margin: 0 auto;
+.container_countdown {
+    color:var(--color-two) !important;
+    background-color:var(--color-one) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-  }
-  
-  h1 {
-    font-weight: normal;
-    letter-spacing: .125rem;
-    text-transform: uppercase;
-  }
-  
-  li {
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+li {
     display: inline-block;
-    font-size: 1.5em;
     list-style-type: none;
-    padding: 1em;
-    text-transform: uppercase;
-  }
+}
   
-  li span {
+li span {
     display: block;
-    font-size: 4.5rem;
-  }
+    font-size: calc(3rem + 1.5vw);
+    color:var(--color-two);
+    font-weight: 700;
+}
+
+#countdown p {
+    color: var(--color-two);
+    font-size: calc(1rem + 1.5vw);
+    font-weight: 700;
+}
 
 /* PRESENTATION */
 
@@ -165,7 +178,7 @@ a {
 
 #video_background {
     width: 100%;
-    height:auto;
+    height: 90vh;
     vertical-align:middle;
     object-fit: cover; 
 
@@ -201,9 +214,7 @@ a {
 
 #brands{
     padding: 0;
-
 }
-
 
 .brand{
     background-color: var(--color-two); /* Color de fondo inicial */
@@ -283,3 +294,20 @@ a {
 .ir-arriba:hover {
     background-color: var(--color-one);
 }
+
+/* MEDIA QUERIES */ 
+/* // XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... } */
