@@ -50,12 +50,12 @@ ul {
     background-color: var(--color-three);
 }
 
-.btn-primary:hover {
-    background-color: var(--color-one);
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--color-one) !important;
 }
 
-.btn-primary:hover a{
-    color: var(--color-two);
+.btn-primary:hover a, .btn-primary:active a{
+    color: var(--color-two) !important;
 }
 
 .btn-secondary {
@@ -70,7 +70,7 @@ ul {
 
 .mt-1 {
     margin-top: 1rem !important;
-  }
+}
 
 
 /* Otros selectores */
@@ -159,6 +159,9 @@ ul {
 #countdown ul {
     padding-left: 0;
 }
+#countdown ul li {
+    padding: 0 1rem;
+}
 
 li {
     display: inline-block;
@@ -225,7 +228,7 @@ li span {
 
 }
 
-.brand-title{
+.brand-title {
     padding: 1rem;
     padding-bottom: 0;
     cursor: pointer;
@@ -239,9 +242,13 @@ li span {
     padding: 0;
 }
 
-.brand{
+.brand {
     background-color: var(--color-two); /* Color de fondo inicial */
     transition: background-color 0.5s ease; /* Efecto de transición suave de 0.5 segundos */
+}
+
+#brands h2 {
+    font-size: calc(1rem + 1vw);
 }
 
 /* Efecto hover */
@@ -249,8 +256,6 @@ li span {
     background-color: var(--color-three);
 
 }
-
-
 
 .brand-col-r, .brand-col-l {
     border-top: var(--color-one) 2px solid;
@@ -261,10 +266,6 @@ li span {
 .brand-col-l{
     border-left: var(--color-one) 1px solid;
 }
-
-
-
-
 
 /* CARDS */
 .card{
@@ -283,13 +284,10 @@ li span {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top: var(--color-one) 2px solid;
-
-
 }
 
 .card:hover{
     background-color: #aae817;
-
 }
 
 .card p {
@@ -299,7 +297,7 @@ li span {
     margin-top: 15px;
 }
 
-/*Flecha para hacer la pagina hacia arriba*/
+/*Flecha para hacer la página hacia arriba*/
 .ir-arriba{
     display:none;
     background-repeat:no-repeat;
@@ -321,6 +319,11 @@ li span {
 /* MEDIA QUERIES */ 
 @media screen and (max-width: 900px) {
 
+    /* NAV */
+    .navbar-toggler {
+        padding:0;
+    }
+
     /* PRESENTATION */
 
     .display-1 {
@@ -340,21 +343,30 @@ li span {
         padding-right: 0;
         padding-bottom: 1rem;
     }
+
+    /* BRANDS */
+    .row-cols-2>* {
+        flex: 0 0 auto;
+        width: 100%;
+}
 }
 
 @media screen and (max-width: 600px) {
 
-/* HEADER */
-
-    #header_title {
-        padding: 4rem;
-        align-items: center;
-    }
-
 /* PRESENTATION*/
 
     .display-1 {
-    font-size: calc(1.625rem + 7vw);}
+    font-size: calc(1.625rem + 7vw);
+    }
 
+/* BRANDS */
 
+    .brand-title {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-chevron-down {
+        padding: 1rem;
+    }
 }
