@@ -117,6 +117,13 @@ ul {
     z-index: 2;          /* Hace que el texto esté por encima del video */
     color: var(--color-two);        /* Color del texto para que destaque sobre el video */
     padding:3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: normal;
+    align-items: flex-start;
+
 }
 
 #header_title > h1 {
@@ -130,6 +137,10 @@ ul {
 #video_background {
     object-fit: cover;  /* Asegura que el video cubra toda el área sin distorsionarse */
     z-index: 1;         /* Hace que el video esté por detrás del contenido */
+    width: 100%;
+    height:90vh;
+    vertical-align:middle;
+    object-fit: cover; 
 }
 
 /* COUNTDOWN */
@@ -143,6 +154,10 @@ ul {
     align-content: center;
     flex-wrap: wrap;
     align-items: center;
+}
+
+#countdown ul {
+    padding-left: 0;
 }
 
 li {
@@ -175,10 +190,18 @@ li span {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+#container_presentation {
+    display: flex;
+    flex-direction: row;
+}
 
-#video_background {
+.presentation_text, .presentation_video {
+    width: 50%;
+}
+
+#video_background_presentation {
     width: 100%;
-    height: 90vh;
+    height: auto;
     vertical-align:middle;
     object-fit: cover; 
 
@@ -296,18 +319,42 @@ li span {
 }
 
 /* MEDIA QUERIES */ 
-/* // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { ... }
+@media screen and (max-width: 900px) {
+
+    /* PRESENTATION */
+
+    .display-1 {
+        font-size: calc(1.625rem + 11vw);
+    }
+    
+    #container_presentation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .presentation_text, .presentation_video {
+        width: 100%;
+    }
+
+    .presentation_text {
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+/* HEADER */
+
+    #header_title {
+        padding: 4rem;
+        align-items: center;
+    }
+
+/* PRESENTATION*/
+
+    .display-1 {
+    font-size: calc(1.625rem + 7vw);}
 
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... } */
+}
