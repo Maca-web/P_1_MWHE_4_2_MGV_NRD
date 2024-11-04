@@ -212,19 +212,20 @@ li span {
 
 .presentation_text {
     padding-right: 2rem;
+    text-align: justify;
 }
 
 
 /* BRANDS  */
 .brand-description {
-    padding: 1rem; /* Espacio entre el h2 y el p */
+    padding: 1rem; 
     color: var(--color-one); 
     display: none;
     text-align: justify;
-    /* background-color: var(--color-three); */
+   
     height: 100%;
     width:100%;
-    opacity: 1; /* Comienza completamente opaca */
+    opacity: 1; 
 
 }
 
@@ -243,13 +244,19 @@ li span {
 }
 
 .brand {
-    background-color: var(--color-two); /* Color de fondo inicial */
-    transition: background-color 0.5s ease; /* Efecto de transición suave de 0.5 segundos */
+    background-color: var(--color-two); 
+    transition: background-color 0.5s ease;
 }
 
 #brands h2 {
     font-size: calc(1rem + 1vw);
 }
+
+
+
+
+
+
 
 /* Efecto hover */
 .brand:hover{
@@ -272,8 +279,8 @@ li span {
 
     border: solid;
     border-radius: 0;
-    background-color: var(--color-two); /* Color de fondo inicial */
-    transition: background-color 0.5s ease; /* Efecto de transición suave de 0.5 segundos */
+    background-color: var(--color-two); 
+    transition: background-color 0.5s ease;
 }
 
 .card>h2 {
@@ -291,9 +298,9 @@ li span {
 }
 
 .card p {
-    display: none; /* Oculto inicialmente */
+    display: none; 
     opacity: 0;
-    transition: opacity 0.5s ease; /* Efecto de desvanecimiento suave */
+    transition: opacity 0.5s ease; 
     margin-top: 15px;
 }
 
@@ -345,10 +352,14 @@ li span {
     }
 
     /* BRANDS */
-    .row-cols-2>* {
-        flex: 0 0 auto;
+    .brand-col-r, .brand-col-l {
         width: 100%;
-}
+    }
+
+    .reverse {
+        flex-direction: row-reverse
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -361,12 +372,15 @@ li span {
 
 /* BRANDS */
 
-    .brand-title {
-        justify-content: center;
-        align-items: center;
-    }
+.row-cols-2>* {
+    flex: 0 0 auto;
+    width: 100%;
+}
 
-    .fa-chevron-down {
-        padding: 1rem;
-    }
+.upside{
+    flex-direction: column-reverse;
+}
+
+     
+
 }
