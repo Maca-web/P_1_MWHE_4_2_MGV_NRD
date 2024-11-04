@@ -267,6 +267,12 @@ li span {
     border-left: var(--color-one) 1px solid;
 }
 
+/* UBICACIÓN */
+/* #ubi {
+    display: flex;
+    flex-direction: row;
+} */
+
 /* CARDS */
 .card{
 
