@@ -81,6 +81,57 @@ ul {
     background-color: var(--color-two)!important;
 }
 
+#location, #about-us  {
+    padding: 0rem;
+}
+
+/* MARQUEE */
+.marquee {
+
+    background-color: var(--color-three);
+    /* height: 2em; */
+    --gap: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    /* font-size: 2em; */
+    /* margin-bottom: 2em; */
+    color:black;
+    
+  }
+  
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--gap);
+    min-width: 100%;
+    opacity: 100%;
+    
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  
+  /* Pause animation when reduced-motion is set */
+  
+  /* Enable animation */
+.enable-animation .marquee__content {
+    animation: scroll 14s linear infinite;
+  } 
+
+
+
+
 /* BARRA NAVEGACIÓN */
 .navbar {
     padding:0;
@@ -109,6 +160,7 @@ ul {
     position:relative; 
     overflow: hidden; 
     padding: 0;
+    transition: 0.4s;
     
 }
 
