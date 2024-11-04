@@ -97,12 +97,11 @@ ul {
     user-select: none;
     gap: var(--gap);
     /* font-size: 2em; */
-    /* margin-bottom: 2em; */
-    color:black;
+    /* margin-bottom: 2em; *//
     
   }
   
-  .marquee__content {
+.marquee__content {
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
@@ -112,6 +111,10 @@ ul {
     opacity: 100%;
     
   }
+
+.m_border_bottom {
+    border-bottom: 2px solid var(--color-one);
+}
   
   @keyframes scroll {
     from {
@@ -305,11 +308,6 @@ li span {
 }
 
 
-
-
-
-
-
 /* Efecto hover */
 .brand:hover{
     background-color: var(--color-three);
@@ -352,7 +350,7 @@ li span {
 }
 
 .card:hover{
-    background-color: #aae817;
+    background-color: var(--color-three);
 }
 
 .card p {
@@ -437,8 +435,6 @@ li span {
 
 .upside{
     flex-direction: column-reverse;
-}
-
-     
+}   
 
 }
