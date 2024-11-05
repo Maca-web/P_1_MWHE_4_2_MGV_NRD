@@ -41,6 +41,10 @@ ul {
     margin-bottom:0;
 }
 
+li {
+    list-style: none;
+}
+
 .btn {
     color:var(--color-one);
     border:none;
