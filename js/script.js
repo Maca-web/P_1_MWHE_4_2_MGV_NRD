@@ -29,8 +29,7 @@ $(function () {
   
 
 
-// FLIPPING CARDS 
-
+// SLIDER SHOW
 
 // BRANDS
 

@@ -342,7 +342,7 @@ iframe {
 }
 
 /* CARDS */
-.card{
+/* .card{
 
     border: solid;
     border-radius: 0;
@@ -369,7 +369,13 @@ iframe {
     opacity: 0;
     transition: opacity 0.5s ease; 
     margin-top: 15px;
-}
+} */
+
+
+
+/* SLIDESSHOW */
+
+
 
 /*Flecha para hacer la página hacia arriba*/
 .ir-arriba{
@@ -436,6 +442,21 @@ iframe {
     #text-location {
         padding:1rem 0 0 0;
     }
+
+}
+
+/* SEPARADOR */
+.separador > h1{
+    max-width: 100%;
+    margin: 1rem;
+    border: var(--color-one) 2px solid;
+    font-size:calc(1.1rem + 11vw);
+    font-weight: 700;
+    text-align:center;
+    color: #ffffff;
+    background-color: #000000;
+    
+
 
 }
 
