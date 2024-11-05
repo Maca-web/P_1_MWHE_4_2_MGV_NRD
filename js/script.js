@@ -29,7 +29,7 @@ $(function () {
   
 
 
-// SLIDER SHOW
+
 
 // BRANDS
 
