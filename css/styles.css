@@ -396,6 +396,32 @@ iframe {
     background-color: var(--color-one);
 }
 
+/* FOOTER */
+footer {
+    background-color: var(--color-one)!important;
+}
+
+.widget-title, .link-secondary, .mb-4, .copyright{
+    color:var(--color-two)!important;
+}
+
+.fa-brands {
+    color:var(--color-two);
+    transition: color 0.3s ease, color 0.3s ease;
+}
+.fa-brands:hover {
+    color:var(--color-three);
+}
+
+#logo_white {
+    padding-bottom:1rem;
+}
+
+.form-control {
+    border-radius: 0;
+
+}
+
 /* MEDIA QUERIES */ 
 @media screen and (max-width: 900px) {
 
@@ -441,6 +467,12 @@ iframe {
 
     #text-location {
         padding:1rem 0 0 0;
+    }
+
+    /* FOOTER */
+
+    #logo_white {
+        width: 40%;
     }
 
 }
