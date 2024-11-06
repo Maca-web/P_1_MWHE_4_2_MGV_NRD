@@ -36,7 +36,7 @@ a {
 
 p {
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 1.2rem;
 }
 
 ul {
@@ -215,8 +215,6 @@ li {
 .display-1 {
     font-size:calc(1.625rem + 15vw);
     font-weight: 700;
-    /* padding-top: 2rem;
-    padding-bottom: 2rem; */
 }
 
 #container_presentation {
@@ -320,16 +318,6 @@ li {
     background-color: var(--color-three);
 }
 
-.brand-col-r, .brand-col-l {
-    border-top: var(--color-one) 2px solid;
-}
-.brand-col-r{
-    border-right: var(--color-one) 1px solid;
-}
-.brand-col-l{
-    border-left: var(--color-one) 1px solid;
-}
-
 /* UBICACIÓN */
 
 #container_location {
@@ -408,6 +396,7 @@ iframe {
 /* FOOTER */
 footer {
     background-color: var(--color-one)!important;
+    padding: 2rem;
 }
 
 .widget-title, .link-secondary, .mb-4, .copyright{
@@ -434,28 +423,24 @@ footer {
 /* MEDIA QUERIES */ 
 @media screen and (max-width: 1390px){
     p{
-        font-size: 15px;
+        font-size: 1rem;
     }
 
     #brands > p {
-        font-size: 14px;
+        font-size: 0.7rem;
     }
 }
 
 @media screen and (max-width: 1100px){
     p{
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 
-    #brands > p {
-        font-size: 10px;
-    }
     #brands > h2 {
-        font-size: 12px;
+        font-size: 0.8rem;
     }
     .fa-solid, .fas {
         font-weight: 900;
-        font-size: 25px;
     }
 }
 
@@ -493,7 +478,7 @@ footer {
     }
 
     .reverse {
-        flex-direction: row-reverse
+        flex-direction: row-reverse;
     }
 
     /* LOCATION */
@@ -522,8 +507,8 @@ footer {
     font-size:calc(1.1rem + 11vw);
     font-weight: 700;
     text-align:center;
-    color: #ffffff;
-    background-color: #000000;
+    color: var(--color-two);
+    background-color: var(--color-one);
     
 
 
