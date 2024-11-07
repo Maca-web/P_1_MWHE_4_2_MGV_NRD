@@ -98,7 +98,7 @@ li {
     background-color: var(--color-two)!important;
 }
 
-#container_location, #formulario {
+#container_location, #presentation, #formulario {
     padding:1rem;
 }
 

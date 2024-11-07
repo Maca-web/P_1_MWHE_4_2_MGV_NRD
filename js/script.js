@@ -92,5 +92,10 @@ $(document).ready(function() {
           $(this).addClass('was-validated'); // Agregar la clase para mostrar la validación
         });
       });
+
+    // // VENTANA MODAL DE SUSCRIPCIÓN NEWSLETTER
+    // $('#myModal').on('shown.bs.modal', function() {
+    //     $('#myInput').focus();
+    // });
     
 });
