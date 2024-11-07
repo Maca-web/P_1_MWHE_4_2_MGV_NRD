@@ -408,7 +408,16 @@ iframe {
 
 /* FORMULARIO TICKETS */
 
+.form-select, .form-control {
+    border-radius:none;
+    border-color: var(--color-three);
+}
 
+.form-check-input:checked {
+    background-color: var(--color-three);
+    border-color: var(--color-three);
+}
+    
 
 /* FOOTER */
 footer {
