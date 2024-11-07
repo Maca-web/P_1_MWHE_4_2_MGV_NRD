@@ -37,7 +37,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img src="media/img/logotipo.png" alt="" width="20" height="20">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,10 +45,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" href="#brands">BRANDS</a>
-                <a class="nav-link" href="#location">LOCATION</a>
-                <a class="nav-link" href="#about-us">ABOUT US</a>
-                <a class="nav-link ">TICKETS</a>
+                <a class="nav-link" href="index.html#brands">BRANDS</a>
+                <a class="nav-link" href="index.html#location">LOCATION</a>
+                <a class="nav-link" href="index.html#about-us">PAST EVENTS</a>
+                <a class="nav-link">TICKETS</a>
               </div>
             </div>
           </div>
@@ -62,7 +62,162 @@
             <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
           </span>
         </a>
-  
+
+        <section id="tickets">
+
+          <div class="section-title">
+            <section  class="enable-animation">
+    
+          
+            <div class="marquee m_border_bottom">
+              <ul class="marquee__content">
+                <li><h1 class="section-title" style="padding: 1rem">LOCATION</h1></li>
+                <li><h1 class="section-title" style="padding: 1rem">LOCATION</h1></li>
+                <li><h1 class="section-title" style="padding: 1rem">LOCATION</h1></li>
+              </ul>
+          
+              <ul aria-hidden="true" class="marquee__content">
+                <li><h1 class="section-title" style="padding: 1rem">LOCATION</h1></li>
+                <li><h1 class="section-title" style="padding: 1rem">LOCATION</h1></li>
+                <li><h1 class="section-title" style="padding: 1rem">LOCATION</h1></li>
+              </ul>
+            </div>
+            </section>
+          </div>
+          <div id="formulario">
+              <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">GET YOUR TICKETS NOW!</h4>
+                <form class="needs-validation" novalidate="">
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <label for="firstName" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
+                    </div>
+        
+                    <div class="col-sm-6">
+                      <label for="lastName" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
+        
+                    <div class="col-12">
+                      <label for="email" class="form-label">Email</span></label>
+                      <input type="email" class="form-control" id="email" placeholder="you@example.com" value="" required="">
+                      <div class="invalid-feedback">
+                        Please enter a valid email address for shipping updates.
+                      </div>
+                    </div>
+        
+                    <div class="col-md-5">
+                      <label for="country" class="form-label">Country</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">Choose...</option>
+                        <option>United States</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid country.
+                      </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                      <label for="state" class="form-label">State</label>
+                      <select class="form-select" id="state" required="">
+                        <option value="">Choose...</option>
+                        <option>California</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please provide a valid state.
+                      </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                      <label for="zip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="zip" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        Zip code required.
+                      </div>
+                    </div>
+                  </div>
+        
+                  <hr class="my-4">
+        
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="same-address">
+                    <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                  </div>
+        
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="save-info">
+                    <label class="form-check-label" for="save-info">Save this information for next time</label>
+                  </div>
+        
+                  <hr class="my-4">
+        
+                  <h4 class="mb-3">PAYMENT</h4>
+        
+                  <div class="my-3">
+                    <div class="form-check">
+                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                      <label class="form-check-label" for="credit">Credit card</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                      <label class="form-check-label" for="debit">Debit card</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                      <label class="form-check-label" for="paypal">PayPal</label>
+                    </div>
+                  </div>
+        
+                  <div class="row gy-3">
+                    <div class="col-md-6">
+                      <label for="cc-name" class="form-label">Name on card</label>
+                      <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                      <small class="text-body-secondary">Full name as displayed on card</small>
+                      <div class="invalid-feedback">
+                        Name on card is required
+                      </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                      <label for="cc-number" class="form-label">Credit card number</label>
+                      <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        Credit card number is required
+                      </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                      <label for="cc-expiration" class="form-label">Expiration</label>
+                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        Expiration date required
+                      </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                      <label for="cc-cvv" class="form-label">CVV</label>
+                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        Security code required
+                      </div>
+                    </div>
+                  </div>
+        
+                  <hr class="my-4">
+        
+                  <button class="w-100 btn btn-primary" type="submit">CHECKOUT</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
       
     <!-- Footer -->
@@ -92,7 +247,7 @@
                       </div>
                       <div class="col-12">
                         <div class="d-grid">
-                          <button class="btn btn-primary" type="submit">SUBSCRIBE</button>
+                          <button class="btn btn-terciary" type="submit">SUBSCRIBE</button>
                         </div>
                       </div>
                     </div>
@@ -149,8 +304,14 @@
         </div>
   
     </footer>
-    <!-- Link al JS de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+     <!-- AOS  -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+
+ <!-- Link al JS de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 
 </body>

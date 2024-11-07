@@ -79,5 +79,18 @@ $(document).ready(function() {
         });
         $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
     }
+
+    // FORMULARIO
+    $(document).ready(function() {
+        // Seleccionar todos los formularios que necesitan validación
+        $('.needs-validation').on('submit', function(event) {
+          // Verificar si el formulario es válido
+          if (!this.checkValidity()) {
+            event.preventDefault(); // Evitar que se envíe el formulario
+            event.stopPropagation(); // Detener la propagación del evento
+          }
+          $(this).addClass('was-validated'); // Agregar la clase para mostrar la validación
+        });
+      });
     
 });
