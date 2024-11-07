@@ -32,23 +32,42 @@ $(function () {
 
 
 // BRANDS
-
 $(document).ready(function() {
     $('.brand-title').click(function() {
         var title = $(this); 
         var description = title.next('.brand-description');
 
-        title.fadeOut(function() {
-            description.css("display", "block").animate({ opacity: 1 }, 500); // Muestra y desvanece la descripción
+        // Asegura que el título no esté ya en un estado oculto
+        title.stop(true, true).fadeOut(function() {
+            description.stop(true, true).css("display", "block").animate({ opacity: 1 }, 500); // Muestra y desvanece la descripción
         });
 
-        description.click(function() {
-            description.animate({ opacity: 0 }, 500, function() { // Reduce la opacidad gradualmente
+        // Usa `.one()` en lugar de `.click()` para evitar acumulación de eventos
+        description.one('click', function() {
+            description.stop(true, true).animate({ opacity: 0 }, 500, function() { // Reduce la opacidad gradualmente
                 description.css("display", "none");
-                title.fadeIn(); // Muestra el título después de la animación
+                title.stop(true, true).fadeIn(); // Muestra el título después de la animación
             });
         });
     });
+
+
+// $(document).ready(function() {
+//     $('.brand-title').click(function() {
+//         var title = $(this); 
+//         var description = title.next('.brand-description');
+
+//         title.fadeOut(function() {
+//             description.css("display", "block").animate({ opacity: 1 }, 500); // Muestra y desvanece la descripción
+//         });
+
+//         description.click(function() {
+//             description.animate({ opacity: 0 }, 500, function() { // Reduce la opacidad gradualmente
+//                 description.css("display", "none");
+//                 title.fadeIn(); // Muestra el título después de la animación
+//             });
+//         });
+//     });
 
     // Variable para el temporizador de scroll
     let timeoutId;
