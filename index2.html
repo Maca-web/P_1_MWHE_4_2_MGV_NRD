@@ -58,7 +58,7 @@
     <main> 
       <section id="tickets">
 
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up" data-aos-duration="1000">
           <section  class="enable-animation">
   
         
@@ -121,18 +121,24 @@
                       <option>Whole weekend (december 20th-22nd)</option>
                     </select>
                     <div class="invalid-feedback">
-                      Please provide a valid state.
+                      Please provide a ticket type.
                     </div>
                   </div>
-      
-                  <div class="col-md-3">
-                    <label for="zip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="zip" placeholder="" required="">
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">Number of tickets</label>
+                    <select class="form-select" id="state" required="">
+                      <option value="">Choose...</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
                     <div class="invalid-feedback">
-                      Zip code required.
+                      Please provide a ticket type.
                     </div>
                   </div>
-                </div>
       
                 <hr class="my-4">
       
@@ -202,21 +208,20 @@
       
                 <hr class="my-4">
       
-                <button class="w-100 btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">CHECKOUT</button>
+                <button class="w-100 btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#Modal">CHECKOUT</button>
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <h1 class="modal-title fs-5" id="ModalLabel">EVERYTHING IS READY</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        ...
+                        Now you just have to get ready and wait!
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                       </div>
                     </div>
                   </div>
@@ -230,7 +235,7 @@
       <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
       </button>
-    </main>>
+    </main>
     <!-- Footer -->
     <footer class="footer">
          <!-- Widgets-->
@@ -267,14 +272,14 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">SUBSCRIBED!</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             ...
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>

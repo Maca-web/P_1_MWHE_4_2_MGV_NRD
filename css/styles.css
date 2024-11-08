@@ -99,7 +99,7 @@ li {
     background-color: var(--color-two)!important;
 }
 
-#container_location,.container_countdown, #presentation, #formulario, breadcrumb {
+#container_location,.container_countdown, #presentation, #formulario {
     padding:1rem;
 }
 
@@ -425,6 +425,9 @@ footer {
     border-radius: 0;
 
 }
+
+/* VENTANAS MODALES */
+
 
 /* MEDIA QUERIES */ 
 @media screen and (max-width: 1390px){
