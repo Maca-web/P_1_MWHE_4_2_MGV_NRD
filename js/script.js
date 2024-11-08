@@ -32,6 +32,8 @@ $(function () {
 
 
 // BRANDS
+
+
 $(document).ready(function() {
     $('.brand-title').click(function() {
         var title = $(this); 
