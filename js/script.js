@@ -95,5 +95,30 @@ $(document).ready(function() {
         $(this).addClass('was-validated'); // Agregar la clase para mostrar la validación
     });
     });
+
+
+// APERTURA DE LA VENTANA MODAL DEL FORMULARIO 
+$(document).ready(function() {
+    // Seleccionar todos los formularios que necesitan validación
+    $('.needs-validation').on('submit', function(event) {
+        // Evitar la acción predeterminada del formulario
+        event.preventDefault();
+        
+        // Verificar si el formulario es válido
+        if (this.checkValidity()) {
+            // Si es válido, muestra la ventana modal
+            $('#Modal').modal('show');
+        } else {
+            // Si no es válido, detiene la propagación del evento y muestra mensajes de validación
+            event.stopPropagation();
+            $(this).addClass('was-validated');
+        }
+    });
+});
+// VOLVER AL INDEX 1 TRAS LA COMPRA
+$('#modalCloseButton').on('click', function() {
+    window.location.href = 'index.html'; // Cambia 'index.html' por la URL de tu landing page
+});
+
     
 });
