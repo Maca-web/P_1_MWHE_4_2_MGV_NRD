@@ -26,9 +26,6 @@ $(function () {
       }
     }, 0);
 });
-  
-
-
 
 
 // BRANDS
@@ -53,24 +50,6 @@ $(document).ready(function() {
         });
     });
 
-
-// $(document).ready(function() {
-//     $('.brand-title').click(function() {
-//         var title = $(this); 
-//         var description = title.next('.brand-description');
-
-//         title.fadeOut(function() {
-//             description.css("display", "block").animate({ opacity: 1 }, 500); // Muestra y desvanece la descripción
-//         });
-
-//         description.click(function() {
-//             description.animate({ opacity: 0 }, 500, function() { // Reduce la opacidad gradualmente
-//                 description.css("display", "none");
-//                 title.fadeIn(); // Muestra el título después de la animación
-//             });
-//         });
-//     });
-
     // Variable para el temporizador de scroll
     let timeoutId;
 
@@ -86,37 +65,35 @@ $(document).ready(function() {
     });
 
 
+// BOTÓN PARA VOLVER ARRIBA
 
+let $myButton = $("#btn-back-to-top");
 
-    // IMÁGENES CARDS 
+// When the user scrolls down 20px from the top of the document, show the button
+$(window).on("scroll", function () {
+if ($(window).scrollTop() > 20) {
+    $myButton.show();
+} else {
+    $myButton.hide();
+}
+});
 
-    // BOTÓN PARA SUBIR ARRIBA
-    $(document).ready(function(){ irArriba(); }); //Hacia arriba
+// When the user clicks on the button, scroll to the top of the document
+$myButton.on("click", function () {
+$("html, body").animate({ scrollTop: 0 }, "slow");
+});
 
-        function irArriba(){
-        $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },1000); });
-        $(window).scroll(function(){
-            if($(this).scrollTop() > 0){ $('.ir-arriba').slideDown(600); }else{ $('.ir-arriba').slideUp(600); }
-        });
-        $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
-    }
-
-    // FORMULARIO
-    $(document).ready(function() {
-        // Seleccionar todos los formularios que necesitan validación
-        $('.needs-validation').on('submit', function(event) {
-          // Verificar si el formulario es válido
-          if (!this.checkValidity()) {
-            event.preventDefault(); // Evitar que se envíe el formulario
-            event.stopPropagation(); // Detener la propagación del evento
-          }
-          $(this).addClass('was-validated'); // Agregar la clase para mostrar la validación
-        });
-      });
-
-    // // VENTANA MODAL DE SUSCRIPCIÓN NEWSLETTER
-    // $('#myModal').on('shown.bs.modal', function() {
-    //     $('#myInput').focus();
-    // });
+// FORMULARIO
+$(document).ready(function() {
+    // Seleccionar todos los formularios que necesitan validación
+    $('.needs-validation').on('submit', function(event) {
+        // Verificar si el formulario es válido
+        if (!this.checkValidity()) {
+        event.preventDefault(); // Evitar que se envíe el formulario
+        event.stopPropagation(); // Detener la propagación del evento
+        }
+        $(this).addClass('was-validated'); // Agregar la clase para mostrar la validación
+    });
+    });
     
 });

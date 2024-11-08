@@ -55,6 +55,7 @@ li {
 
 .btn-primary {
     background-color: var(--color-three);
+    transition: background-color 0.5s ease;
 }
 
 .btn-primary:hover, .btn-primary:active {
@@ -98,7 +99,7 @@ li {
     background-color: var(--color-two)!important;
 }
 
-#container_location, #presentation, #formulario {
+#container_location,.container_countdown, #presentation, #formulario, breadcrumb {
     padding:1rem;
 }
 
@@ -373,25 +374,15 @@ iframe {
 }
 
 
-
-
-/*FLECHA HACIA ARRIBA*/
-.ir-arriba{
-    display:none;
-    background-repeat:no-repeat;
-    font-size:1.3rem;
-    background-color: var(--color-three);
-    cursor:pointer;
-    color:var(--color-one);
-    position:fixed;
-    bottom:18px;
-    right:18px;
-    z-index:2;
-    transition: 0.5s ease; 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    display: none;
 }
 
-.ir-arriba:hover {
-    background-color: var(--color-one);
+.fas.fa-arrow-up {
+    color:var(--color-two);
 }
 
 
