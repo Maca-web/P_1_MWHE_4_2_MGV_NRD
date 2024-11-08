@@ -67,7 +67,8 @@ li {
 
 .btn-secondary {
     background-color: var(--color-two);
-    color:var(--color-one)
+    color:var(--color-one);
+    transition: background-color 0.5s ease;
 }
 
 .btn-secondary:hover {
@@ -75,16 +76,30 @@ li {
     color:var(--color-one)
 }
 
+.btn-terciary {
+    background-color: var(--color-three);
+    color:var(--color-one);
+    transition: background-color 0.5s ease;;
+}
+
+.btn-terciary:hover {
+    background-color: var(--color-four);
+    color:var(--color-one);
+}
+
 .mt-1 {
     margin-top: 1rem !important;
 }
 
 /* Otros selectores */
-.navbar, .header_web, .container_countdown, #brands,#presentation, #location, #about-us {
+.navbar, .header_web, .container_countdown, #brands, #presentation, #location, #about-us, #tickets{
     border: var(--color-one) 2px solid;
     margin:1rem;
-    padding: 1rem;
     background-color: var(--color-two)!important;
+}
+
+#container_location, #presentation, #formulario {
+    padding:1rem;
 }
 
 #location, #about-us  {
@@ -237,7 +252,7 @@ li {
     padding-right: 2rem;
 }
 
-/* MARQUEE */
+/* MARQUEES */
 .marquee {
     background-color: var(--color-three);
     --gap: 1rem;
@@ -281,6 +296,7 @@ li {
 }
 
 
+
 /* BRANDS  */
 .brand-description {
     padding: 1rem; 
@@ -319,10 +335,6 @@ li {
 }
 
 /* UBICACIÓN */
-
-#container_location {
-    padding:1rem;
-}
 
 .location-col-r, .location-col-l {
     width: 50%;
@@ -363,7 +375,7 @@ iframe {
 
 
 
-/*Flecha para hacer la página hacia arriba*/
+/*FLECHA HACIA ARRIBA*/
 .ir-arriba{
     display:none;
     background-repeat:no-repeat;
@@ -381,6 +393,20 @@ iframe {
 .ir-arriba:hover {
     background-color: var(--color-one);
 }
+
+
+/* FORMULARIO TICKETS */
+
+.form-select, .form-control {
+    border-radius:none;
+    border-color: var(--color-three);
+}
+
+.form-check-input:checked {
+    background-color: var(--color-three);
+    border-color: var(--color-three);
+}
+    
 
 /* FOOTER */
 footer {
