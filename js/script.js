@@ -120,5 +120,23 @@ $('#modalCloseButton').on('click', function() {
     window.location.href = 'index.html'; // Cambia 'index.html' por la URL de tu landing page
 });
 
+// NEWSLETTER
+
+// $(document).ready(function() {
+//     $('#newsletter-form').on('submit', function(event) {
+//       event.preventDefault(); // Previene el envío automático del formulario
+      
+//       const emailInput = $('#email-newsletter');
+//       const emailValue = emailInput.val().trim();
+//       const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/; // Patrón simple para validar el correo electrónico
+  
+//       if (emailPattern.test(emailValue)) {
+//         // Abre la ventana modal si la validación es correcta
+//         $('#subscribeModal').modal('show');
+//       } else {
+//         alert('Please enter a valid email address.');
+//       }
+//     });
+//   });
     
 });
