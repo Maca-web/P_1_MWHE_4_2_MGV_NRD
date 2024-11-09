@@ -15,8 +15,6 @@
     scroll-behavior: smooth;
     color: var(--color-one);
     text-align: justify;
-
-
 }
 
 /* Selectores generales */
@@ -296,8 +294,6 @@ li {
     animation: scroll 14s linear infinite;
 }
 
-
-
 /* BRANDS  */
 .brand-description {
     padding: 1rem; 
@@ -356,12 +352,12 @@ iframe {
 .carousel-caption > h1 {
     font-size: calc(1rem + 7vw);
     text-align: center;
-    
-
 }
+
 .carousel-indicators [data-bs-target] {
     background-color: var(--color-one);;
 }
+
 .carousel-caption {
     position: absolute;
     right: 0%; 
@@ -426,12 +422,10 @@ footer {
 
 }
 
-/* VENTANAS MODALES */
-
 
 /* MEDIA QUERIES */ 
 @media screen and (max-width: 1390px){
-    p{
+    p {
         font-size: 0.9rem;
     }
 
@@ -441,7 +435,7 @@ footer {
 }
 
 @media screen and (max-width: 1100px){
-    p{
+    p {
         font-size: 0.8rem;
     }
     
@@ -512,7 +506,7 @@ footer {
 
 }
 
-/* SEPARADOR */
+/* SEPARADORES */
 .separador > h1{
     max-width: 100%;
     margin: 1rem;
@@ -522,42 +516,40 @@ footer {
     text-align:center;
     color: var(--color-two);
     background-color: var(--color-one);
-    
-
-
 }
 
 @media screen and (max-width: 600px) {
 
     /* MARQUEE  */
-    .section-title{
+    .section-title {
         font-size: 1.5rem;
     }
 
-    p{
+    p {
         font-size: 0.7rem;
     }
 
-/* PRESENTATION*/
+    /* PRESENTATION*/
     .display-1 {
     font-size: calc(1.625rem + 7vw);
     }
 
-/* BRANDS */
+    /* BRANDS */
 
-.row-cols-2>* {
-    flex: 0 0 auto;
-    width: 100%;
-}
+    .row-cols-2>* {
+        flex: 0 0 auto;
+        width: 100%;
+    }
 
-.upside{
-    flex-direction: column-reverse;
-}  
+    .upside{
+        flex-direction: column-reverse;
+    }  
 
-.fa-solid, .fas {
-    font-weight: 900;
-    font-size: 20px;
-}
+    .fa-solid, .fas {
+        font-weight: 900;
+        font-size: 20px;
+    }
+
     /* GALLERY */
     .carousel-caption > h1 {
         font-size: calc(1rem + 2vw);
@@ -570,6 +562,5 @@ footer {
         padding: 0.3rem;
 
     }
-
 
 }

@@ -258,37 +258,38 @@
                   <h4 class="widget-title mb-4">Our Newsletter</h4>
                   <p class="mb-4">Sign up for our newsletter to get exclusive tips, sneak peeks, and surprises (hint: discounts!). No spam, just the good stuff.</p>
                   <p class="mb-4">Drop your email below to join the fun!</p>
-                  <form action="#!">
+                  <form id="newsletterForm">
                     <div class="row gy-4">
                       <div class="col-12">
                         <div class="input-group">
-                          <input type="email" class="form-control" id="email-newsletter" value="" placeholder="Email Address" aria-label="email-newsletter" aria-describedby="email-newsletter-addon" required>
+                          <input type="email" class="form-control" id="email-newsletter" placeholder="Email Address" aria-label="email-newsletter" required>
                         </div>
                       </div>
                       <div class="col-12">
                         <div class="d-grid">
-                          <button class="btn btn-terciary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">SUBSCRIBE</button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">SUBSCRIBED!</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            ...
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                          </div>
+                          <button class="btn btn-terciary" type="submit">SUBSCRIBE</button>
                         </div>
                       </div>
                     </div>
                   </form>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">SUBSCRIBED!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modal-body-content">
+                          Thank you for subscribing with <strong id="user-email"></strong>! You will start receiving our updates soon.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -352,3 +353,4 @@
   <script src="js/script.js"></script>
 
 </body>
+</html>
